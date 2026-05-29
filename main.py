@@ -5,7 +5,7 @@ from utils.file_utils import read_names
 from utils.openspace import Openspace
 
 # Default open space setup: 6 tables of 4 seats = 24 seats.
-DEFAULT_NUMBER_OF_TABLES = 6
+DEFAULT_NUMBER_OF_TABLES = 12
 DEFAULT_SEATS_PER_TABLE = 4
 
 # Default location of the colleagues file and of the saved arrangement.
