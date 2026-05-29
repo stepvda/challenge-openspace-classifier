@@ -2,5 +2,3 @@
 __pycache__/
 *.py[cod]
 
-# Generated seating arrangement
-openspace_arrangement.txt

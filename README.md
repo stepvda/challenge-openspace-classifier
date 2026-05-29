@@ -1,11 +1,11 @@
-# 🪑 Open Space Organizer
+# Open Space Organizer
 
 A small Python program that **randomly assigns colleagues to seats** in an open
-space. Our company moved to a new office — an open space with **6 tables of 4
+space. Our company moved to a new office — an open space with **12** **tables of 4
 seats (24 seats)** — and we want to change seats every day to get to know each
 other better.
 
-## 📖 Description
+## Description
 
 The program:
 
@@ -23,7 +23,7 @@ It is built with **Object-Oriented Programming** around three classes:
 | `Table`     | `utils/table.py`     | A table made of several seats.                  |
 | `Openspace` | `utils/openspace.py` | The whole room: organizes, displays and stores. |
 
-## 🗂️ Project structure
+## Project structure
 
 ```
 challenge-openspace-classifier/
@@ -37,7 +37,7 @@ challenge-openspace-classifier/
     └── openspace.py        # Openspace class
 ```
 
-## ⚙️ Installation
+## Installation
 
 This project uses only the Python standard library, so there is nothing to
 install beyond **Python 3.8+**.
@@ -47,7 +47,7 @@ git clone https://github.com/<your-username>/challenge-openspace-classifier.git
 cd challenge-openspace-classifier
 ```
 
-## 🚀 Usage
+## Usage
 
 Run the program with the default colleagues file (`colleagues.txt`):
 

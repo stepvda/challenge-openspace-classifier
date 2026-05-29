@@ -1,0 +1,62 @@
+Table 1:
+  - Empty
+  - Ibtihel
+  - Max
+  - Empty
+Table 2:
+  - Stephane
+  - Empty
+  - Vanessa
+  - Neha
+Table 3:
+  - Empty
+  - Empty
+  - Gunay
+  - Empty
+Table 4:
+  - Empty
+  - Jeong
+  - Empty
+  - Empty
+Table 5:
+  - Hiba
+  - Empty
+  - Empty
+  - Imad
+Table 6:
+  - Siegried
+  - Empty
+  - Empty
+  - Victor
+Table 7:
+  - Hussein
+  - Empty
+  - Gaetan
+  - Sooyoung
+Table 8:
+  - Empty
+  - Dan
+  - Anna
+  - Empty
+Table 9:
+  - Empty
+  - Empty
+  - Guillermo
+  - Iness
+Table 10:
+  - Uzair
+  - Empty
+  - Thi
+  - Empty
+Table 11:
+  - Mahalakshmi
+  - Empty
+  - Empty
+  - Sitara
+Table 12:
+  - Irene
+  - Empty
+  - Empty
+  - Ibrahim
+
+Seats left: 24 / 48
