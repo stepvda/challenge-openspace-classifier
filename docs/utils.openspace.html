@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module utils.openspace</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="utils.html" class="white">utils</a>.openspace</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/nstephane/Dev/AI_Data_Science_training/challenge-openspace-classifier/utils/openspace.py">/Users/nstephane/Dev/AI_Data_Science_training/challenge-openspace-classifier/utils/openspace.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="random.html">random</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="utils.openspace.html#Openspace">Openspace</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Openspace">class <strong>Openspace</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Openspace">Openspace</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tables:&nbsp;Optional[List[Table]]&nbsp;=&nbsp;None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;number_of_tables:&nbsp;int&nbsp;=&nbsp;6,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;seats_per_table:&nbsp;int&nbsp;=&nbsp;4<br>
+)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+An&nbsp;open&nbsp;space&nbsp;made&nbsp;of&nbsp;several&nbsp;tables&nbsp;onto&nbsp;which&nbsp;people&nbsp;are&nbsp;seated&nbsp;randomly.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Openspace-__init__"><strong>__init__</strong></a>(
+    self,
+    tables: Optional[List[Table]] = None,
+    number_of_tables: int = 6,
+    seats_per_table: int = 4
+) -&gt; None</dt><dd><span class="code">Initialise&nbsp;the&nbsp;open&nbsp;space.<br>
+:param&nbsp;tables:&nbsp;An&nbsp;optional&nbsp;pre-built&nbsp;list&nbsp;of&nbsp;Table&nbsp;objects.&nbsp;When&nbsp;omitted,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`number_of_tables`&nbsp;tables&nbsp;of&nbsp;`seats_per_table`&nbsp;seats&nbsp;are&nbsp;created.<br>
+:param&nbsp;number_of_tables:&nbsp;The&nbsp;number&nbsp;of&nbsp;tables&nbsp;to&nbsp;build&nbsp;(6&nbsp;by&nbsp;default).<br>
+:param&nbsp;seats_per_table:&nbsp;The&nbsp;number&nbsp;of&nbsp;seats&nbsp;per&nbsp;table&nbsp;(4&nbsp;by&nbsp;default).</span></dd></dl>
+
+<dl><dt><a name="Openspace-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><span class="code">Return&nbsp;a&nbsp;readable,&nbsp;multi-line&nbsp;description&nbsp;of&nbsp;the&nbsp;whole&nbsp;open&nbsp;space.<br>
+:return:&nbsp;A&nbsp;string&nbsp;listing&nbsp;every&nbsp;table&nbsp;and&nbsp;its&nbsp;occupants.</span></dd></dl>
+
+<dl><dt><a name="Openspace-display"><strong>display</strong></a>(self) -&gt; None</dt><dd><span class="code">Print&nbsp;every&nbsp;table&nbsp;and&nbsp;its&nbsp;occupants&nbsp;in&nbsp;a&nbsp;readable&nbsp;way.<br>
+:return:&nbsp;None.</span></dd></dl>
+
+<dl><dt><a name="Openspace-number_of_seats"><strong>number_of_seats</strong></a>(self) -&gt; int</dt><dd><span class="code">Count&nbsp;the&nbsp;total&nbsp;number&nbsp;of&nbsp;seats&nbsp;in&nbsp;the&nbsp;open&nbsp;space.<br>
+:return:&nbsp;The&nbsp;total&nbsp;seat&nbsp;count&nbsp;across&nbsp;all&nbsp;tables.</span></dd></dl>
+
+<dl><dt><a name="Openspace-organize"><strong>organize</strong></a>(self, names: List[str]) -&gt; List[str]</dt><dd><span class="code">Randomly&nbsp;assign&nbsp;the&nbsp;given&nbsp;people&nbsp;to&nbsp;the&nbsp;seats&nbsp;of&nbsp;the&nbsp;open&nbsp;space.<br>
+All&nbsp;seats&nbsp;from&nbsp;every&nbsp;table&nbsp;are&nbsp;gathered,&nbsp;shuffled,&nbsp;and&nbsp;then&nbsp;filled&nbsp;one&nbsp;by<br>
+one.&nbsp;If&nbsp;there&nbsp;are&nbsp;more&nbsp;people&nbsp;than&nbsp;seats,&nbsp;the&nbsp;surplus&nbsp;people&nbsp;are&nbsp;returned<br>
+so&nbsp;the&nbsp;caller&nbsp;can&nbsp;report&nbsp;them.<br>
+:param&nbsp;names:&nbsp;The&nbsp;list&nbsp;of&nbsp;names&nbsp;to&nbsp;seat&nbsp;in&nbsp;the&nbsp;open&nbsp;space.<br>
+:return:&nbsp;The&nbsp;list&nbsp;of&nbsp;people&nbsp;who&nbsp;could&nbsp;not&nbsp;be&nbsp;seated&nbsp;(empty&nbsp;if&nbsp;everyone&nbsp;fit).</span></dd></dl>
+
+<dl><dt><a name="Openspace-seats_left"><strong>seats_left</strong></a>(self) -&gt; int</dt><dd><span class="code">Count&nbsp;how&nbsp;many&nbsp;seats&nbsp;are&nbsp;still&nbsp;free&nbsp;across&nbsp;the&nbsp;whole&nbsp;open&nbsp;space.<br>
+:return:&nbsp;The&nbsp;number&nbsp;of&nbsp;free&nbsp;seats.</span></dd></dl>
+
+<dl><dt><a name="Openspace-store"><strong>store</strong></a>(self, filename: str) -&gt; None</dt><dd><span class="code">Save&nbsp;the&nbsp;current&nbsp;seating&nbsp;arrangement&nbsp;to&nbsp;a&nbsp;text&nbsp;file.<br>
+:param&nbsp;filename:&nbsp;The&nbsp;path&nbsp;of&nbsp;the&nbsp;file&nbsp;to&nbsp;write&nbsp;the&nbsp;arrangement&nbsp;to.<br>
+:return:&nbsp;None.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional</td></tr></table>
+</body></html>

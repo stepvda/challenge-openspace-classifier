@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module utils.table</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="utils.html" class="white">utils</a>.table</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/Users/nstephane/Dev/AI_Data_Science_training/challenge-openspace-classifier/utils/table.py">/Users/nstephane/Dev/AI_Data_Science_training/challenge-openspace-classifier/utils/table.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="utils.table.html#Seat">Seat</a>
+</dt><dt class="heading-text"><a href="utils.table.html#Table">Table</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Seat">class <strong>Seat</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Seat">Seat</a>(free:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;occupant:&nbsp;str&nbsp;=&nbsp;'')&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+A&nbsp;single&nbsp;seat&nbsp;in&nbsp;the&nbsp;open&nbsp;space&nbsp;that&nbsp;can&nbsp;be&nbsp;free&nbsp;or&nbsp;occupied&nbsp;by&nbsp;one&nbsp;person.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Seat-__init__"><strong>__init__</strong></a>(self, free: bool = True, occupant: str = '') -&gt; None</dt><dd><span class="code">Initialise&nbsp;a&nbsp;seat.<br>
+&nbsp;<br>
+:param&nbsp;free:&nbsp;Whether&nbsp;the&nbsp;seat&nbsp;is&nbsp;available&nbsp;(True&nbsp;by&nbsp;default).<br>
+:param&nbsp;occupant:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;person&nbsp;sitting&nbsp;on&nbsp;the&nbsp;seat&nbsp;(""&nbsp;if&nbsp;free).</span></dd></dl>
+
+<dl><dt><a name="Seat-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><span class="code">Return&nbsp;a&nbsp;readable&nbsp;description&nbsp;of&nbsp;the&nbsp;seat.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;occupant's&nbsp;name,&nbsp;or&nbsp;"Empty"&nbsp;when&nbsp;the&nbsp;seat&nbsp;is&nbsp;free.</span></dd></dl>
+
+<dl><dt><a name="Seat-remove_occupant"><strong>remove_occupant</strong></a>(self) -&gt; str</dt><dd><span class="code">Free&nbsp;the&nbsp;seat&nbsp;and&nbsp;return&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;person&nbsp;who&nbsp;was&nbsp;sitting&nbsp;there.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;previous&nbsp;occupant&nbsp;(""&nbsp;if&nbsp;the&nbsp;seat&nbsp;was&nbsp;already&nbsp;free).</span></dd></dl>
+
+<dl><dt><a name="Seat-set_occupant"><strong>set_occupant</strong></a>(self, name: str) -&gt; bool</dt><dd><span class="code">Assign&nbsp;a&nbsp;person&nbsp;to&nbsp;the&nbsp;seat&nbsp;if&nbsp;it&nbsp;is&nbsp;free.<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;person&nbsp;to&nbsp;seat.<br>
+:return:&nbsp;True&nbsp;if&nbsp;the&nbsp;person&nbsp;was&nbsp;seated,&nbsp;False&nbsp;if&nbsp;the&nbsp;seat&nbsp;was&nbsp;already&nbsp;taken.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Table">class <strong>Table</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Table">Table</a>(capacity:&nbsp;int&nbsp;=&nbsp;4,&nbsp;seats:&nbsp;Optional[List[<a href="#Seat">Seat</a>]]&nbsp;=&nbsp;None)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+A&nbsp;table&nbsp;made&nbsp;of&nbsp;a&nbsp;fixed&nbsp;number&nbsp;of&nbsp;seats.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Table-__init__"><strong>__init__</strong></a>(self, capacity: int = 4, seats: Optional[List[Seat]] = None) -&gt; None</dt><dd><span class="code">Initialise&nbsp;a&nbsp;table&nbsp;with&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;seats.<br>
+&nbsp;<br>
+:param&nbsp;capacity:&nbsp;The&nbsp;number&nbsp;of&nbsp;seats&nbsp;at&nbsp;the&nbsp;table&nbsp;(4&nbsp;by&nbsp;default).<br>
+:param&nbsp;seats:&nbsp;An&nbsp;optional&nbsp;pre-built&nbsp;list&nbsp;of&nbsp;<a href="#Seat">Seat</a>&nbsp;objects.&nbsp;When&nbsp;omitted,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`capacity`&nbsp;fresh&nbsp;free&nbsp;seats&nbsp;are&nbsp;created.</span></dd></dl>
+
+<dl><dt><a name="Table-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><span class="code">Return&nbsp;a&nbsp;readable,&nbsp;multi-line&nbsp;description&nbsp;of&nbsp;the&nbsp;table&nbsp;and&nbsp;its&nbsp;occupants.<br>
+&nbsp;<br>
+:return:&nbsp;A&nbsp;string&nbsp;listing&nbsp;each&nbsp;seat&nbsp;of&nbsp;the&nbsp;table.</span></dd></dl>
+
+<dl><dt><a name="Table-assign_seat"><strong>assign_seat</strong></a>(self, name: str) -&gt; bool</dt><dd><span class="code"><a href="#Seat">Seat</a>&nbsp;a&nbsp;person&nbsp;on&nbsp;the&nbsp;first&nbsp;free&nbsp;seat&nbsp;found&nbsp;at&nbsp;the&nbsp;table.<br>
+&nbsp;<br>
+:param&nbsp;name:&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;person&nbsp;to&nbsp;seat.<br>
+:return:&nbsp;True&nbsp;if&nbsp;the&nbsp;person&nbsp;was&nbsp;seated,&nbsp;False&nbsp;if&nbsp;the&nbsp;table&nbsp;was&nbsp;full.</span></dd></dl>
+
+<dl><dt><a name="Table-has_free_spot"><strong>has_free_spot</strong></a>(self) -&gt; bool</dt><dd><span class="code">Tell&nbsp;whether&nbsp;at&nbsp;least&nbsp;one&nbsp;seat&nbsp;is&nbsp;still&nbsp;available&nbsp;at&nbsp;the&nbsp;table.<br>
+&nbsp;<br>
+:return:&nbsp;True&nbsp;if&nbsp;a&nbsp;free&nbsp;seat&nbsp;exists,&nbsp;False&nbsp;otherwise.</span></dd></dl>
+
+<dl><dt><a name="Table-left_capacity"><strong>left_capacity</strong></a>(self) -&gt; int</dt><dd><span class="code">Count&nbsp;how&nbsp;many&nbsp;seats&nbsp;are&nbsp;still&nbsp;free&nbsp;at&nbsp;the&nbsp;table.<br>
+&nbsp;<br>
+:return:&nbsp;The&nbsp;number&nbsp;of&nbsp;free&nbsp;seats.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional</td></tr></table>
+</body></html>
